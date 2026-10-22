@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   title: "Cash for Cars FAQ | Selling Your Car in Red Deer & Alberta",
   description: "Answers to common questions about selling your car for cash in Red Deer and Alberta: pricing, paperwork, liens, plates, pickup, hail damage and more.",
   alternates: { canonical: "https://www.carsforcashreddeer.ca/faq/" },
-  openGraph: { title: "Cash for Cars FAQ | Selling Your Car in Red Deer & Alberta", description: "Straight answers about quotes, paperwork, liens, pickup, payment and vehicle condition.", url: "https://carsforcashreddeer.ca/faq/", siteName: "Cars for Cash Red Deer", locale: "en_CA", type: "website", images: [{ url: "/assets/2017-lexus.jpeg", width: 1320, height: 1267, alt: "Questions about selling a car for cash in Alberta" }] },
-  twitter: { card: "summary_large_image", title: "Cash for Cars FAQ", description: "Answers about selling your vehicle for cash in Alberta.", images: ["/assets/2017-lexus.jpeg"] },
+  openGraph: { title: "Cash for Cars FAQ | Selling Your Car in Red Deer & Alberta", description: "Straight answers about quotes, paperwork, liens, pickup, payment and vehicle condition.", url: "https://www.carsforcashreddeer.ca/faq/", siteName: "Cars for Cash Red Deer", locale: "en_CA", type: "website", images: [{ url: "/social-share.png", width: 1200, height: 630, alt: "Cars for Cash Red Deer" }] },
+  twitter: { card: "summary_large_image", title: "Cash for Cars FAQ", description: "Answers about selling your vehicle for cash in Alberta.", images: ["/social-share.png"] },
 };
 
 type Question = { question: string; schemaAnswer: string; answer?: ReactNode };
@@ -62,7 +62,7 @@ const categories: Category[] = [
 
 const allQuestions = categories.flatMap((category) => category.questions);
 const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: allQuestions.map((item) => ({ "@type": "Question", name: item.question, acceptedAnswer: { "@type": "Answer", text: item.schemaAnswer } })) };
-const breadcrumbSchema = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://carsforcashreddeer.ca/" }, { "@type": "ListItem", position: 2, name: "FAQ", item: "https://carsforcashreddeer.ca/faq/" }] };
+const breadcrumbSchema = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.carsforcashreddeer.ca/" }, { "@type": "ListItem", position: 2, name: "FAQ", item: "https://www.carsforcashreddeer.ca/faq/" }] };
 
 function QuestionList({ questions }: { questions: Question[] }) {
   return <div className="faq-page-list">{questions.map((item) => <details key={item.question}><summary><span>{item.question}</span><ChevronDown aria-hidden="true" /></summary><div><p>{item.answer ?? item.schemaAnswer}</p></div></details>)}</div>;

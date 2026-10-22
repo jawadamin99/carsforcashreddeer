@@ -10,8 +10,8 @@ export const metadata: Metadata = {
   title: "Cash for Scrap Cars Red Deer | Top Scrap Prices Paid",
   description: "How much is your scrap car worth in Red Deer? We pay top cash for scrap cars based on weight, metal prices and parts, with a clear breakdown, free pickup and instant payment.",
   alternates: { canonical: "https://www.carsforcashreddeer.ca/cash-for-scrap-cars/" },
-  openGraph: { title: "Cash for Scrap Cars Red Deer | Top Scrap Prices Paid", description: "Transparent scrap car pricing based on weight, current metal prices and recoverable parts.", url: "https://carsforcashreddeer.ca/cash-for-scrap-cars/", siteName: "Cars for Cash Red Deer", locale: "en_CA", type: "website", images: [{ url: "/assets/cash-for-scrap-cars.jpeg", width: 1200, height: 1600, alt: "Scrap vehicle valued for metal and reusable parts" }] },
-  twitter: { card: "summary_large_image", title: "Cash for Scrap Cars Red Deer | Top Scrap Prices Paid", description: "Get a clear scrap car price, free pickup and payment on the spot.", images: ["/assets/cash-for-scrap-cars.jpeg"] },
+  openGraph: { title: "Cash for Scrap Cars Red Deer | Top Scrap Prices Paid", description: "Transparent scrap car pricing based on weight, current metal prices and recoverable parts.", url: "https://www.carsforcashreddeer.ca/cash-for-scrap-cars/", siteName: "Cars for Cash Red Deer", locale: "en_CA", type: "website", images: [{ url: "/social-share.png", width: 1200, height: 630, alt: "Cars for Cash Red Deer" }] },
+  twitter: { card: "summary_large_image", title: "Cash for Scrap Cars Red Deer | Top Scrap Prices Paid", description: "Get a clear scrap car price, free pickup and payment on the spot.", images: ["/social-share.png"] },
 };
 
 const faqs: FaqItem[] = [
@@ -22,9 +22,9 @@ const faqs: FaqItem[] = [
   { question: "Should I remove parts before scrapping my car?", answer: "Generally no. A complete car earns a better offer, and you save time and effort." },
 ];
 
-const serviceSchema = { "@context": "https://schema.org", "@type": "Service", "@id": "https://carsforcashreddeer.ca/cash-for-scrap-cars/#service", name: "Cash for Scrap Cars Red Deer", serviceType: "Scrap vehicle valuation and purchasing", description: "Transparent cash offers for scrap vehicles based on weight, current metal prices, catalytic converters, reusable parts and completeness.", provider: { "@type": "AutomotiveBusiness", "@id": "https://www.carsforcashreddeer.ca/#business", name: "Cars for Cash Red Deer", telephone: "[PHONE]" }, areaServed: ["Red Deer", "Sylvan Lake", "Blackfalds", "Lacombe", "Penhold", "Innisfail", "Red Deer County"] };
+const serviceSchema = { "@context": "https://schema.org", "@type": "Service", "@id": "https://www.carsforcashreddeer.ca/cash-for-scrap-cars/#service", name: "Cash for Scrap Cars Red Deer", serviceType: "Scrap vehicle valuation and purchasing", description: "Transparent cash offers for scrap vehicles based on weight, current metal prices, catalytic converters, reusable parts and completeness.", provider: { "@type": "AutomotiveBusiness", "@id": "https://www.carsforcashreddeer.ca/#business", name: "Cars for Cash Red Deer", telephone: "[PHONE]" }, areaServed: ["Red Deer", "Sylvan Lake", "Blackfalds", "Lacombe", "Penhold", "Innisfail", "Red Deer County"] };
 const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((faq) => ({ "@type": "Question", name: faq.question, acceptedAnswer: { "@type": "Answer", text: faq.answer } })) };
-const breadcrumbSchema = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://carsforcashreddeer.ca/" }, { "@type": "ListItem", position: 2, name: "Cash for Scrap Cars", item: "https://carsforcashreddeer.ca/cash-for-scrap-cars/" }] };
+const breadcrumbSchema = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.carsforcashreddeer.ca/" }, { "@type": "ListItem", position: 2, name: "Cash for Scrap Cars", item: "https://www.carsforcashreddeer.ca/cash-for-scrap-cars/" }] };
 
 export default function CashForScrapCarsPage() {
   return (

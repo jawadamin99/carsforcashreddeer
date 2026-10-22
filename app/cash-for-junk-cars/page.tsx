@@ -10,8 +10,8 @@ export const metadata: Metadata = {
   title: "Cash for Junk Cars Red Deer | Running or Not, We Buy It",
   description: "Get cash for junk cars Red Deer. Dead engine, failed inspection, missing parts or years in the yard, we buy it as-is with free towing and payment on pickup.",
   alternates: { canonical: "https://www.carsforcashreddeer.ca/cash-for-junk-cars/" },
-  openGraph: { title: "Cash for Junk Cars Red Deer | Running or Not, We Buy It", description: "Dead engine, failed inspection or missing parts—we buy junk cars as-is with free towing.", url: "https://carsforcashreddeer.ca/cash-for-junk-cars/", siteName: "Cars for Cash Red Deer", locale: "en_CA", type: "website", images: [{ url: "/assets/2011-mitsubishi-lancer.jpeg", width: 1600, height: 1200, alt: "Non-running junk car collected in Red Deer" }] },
-  twitter: { card: "summary_large_image", title: "Cash for Junk Cars Red Deer | Running or Not, We Buy It", description: "We buy broken and non-running cars as-is, with free towing and payment at pickup.", images: ["/assets/2011-mitsubishi-lancer.jpeg"] },
+  openGraph: { title: "Cash for Junk Cars Red Deer | Running or Not, We Buy It", description: "Dead engine, failed inspection or missing parts—we buy junk cars as-is with free towing.", url: "https://www.carsforcashreddeer.ca/cash-for-junk-cars/", siteName: "Cars for Cash Red Deer", locale: "en_CA", type: "website", images: [{ url: "/social-share.png", width: 1200, height: 630, alt: "Cars for Cash Red Deer" }] },
+  twitter: { card: "summary_large_image", title: "Cash for Junk Cars Red Deer | Running or Not, We Buy It", description: "We buy broken and non-running cars as-is, with free towing and payment at pickup.", images: ["/social-share.png"] },
 };
 
 const faqs: FaqItem[] = [
@@ -23,9 +23,9 @@ const faqs: FaqItem[] = [
   { question: "How soon can I get paid?", answer: "Payment is made at pickup, and same-day pickup is often available in Red Deer." },
 ];
 
-const serviceSchema = { "@context": "https://schema.org", "@type": "Service", "@id": "https://carsforcashreddeer.ca/cash-for-junk-cars/#service", name: "Cash for Junk Cars Red Deer", serviceType: "Junk and non-running vehicle purchasing", description: "Cash offers for broken, failed, non-running and neglected vehicles in Red Deer with free towing.", provider: { "@type": "AutomotiveBusiness", "@id": "https://www.carsforcashreddeer.ca/#business", name: "Cars for Cash Red Deer", telephone: "[PHONE]" }, areaServed: ["Red Deer", "Sylvan Lake", "Blackfalds", "Lacombe", "Penhold", "Innisfail", "Red Deer County"] };
+const serviceSchema = { "@context": "https://schema.org", "@type": "Service", "@id": "https://www.carsforcashreddeer.ca/cash-for-junk-cars/#service", name: "Cash for Junk Cars Red Deer", serviceType: "Junk and non-running vehicle purchasing", description: "Cash offers for broken, failed, non-running and neglected vehicles in Red Deer with free towing.", provider: { "@type": "AutomotiveBusiness", "@id": "https://www.carsforcashreddeer.ca/#business", name: "Cars for Cash Red Deer", telephone: "[PHONE]" }, areaServed: ["Red Deer", "Sylvan Lake", "Blackfalds", "Lacombe", "Penhold", "Innisfail", "Red Deer County"] };
 const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((faq) => ({ "@type": "Question", name: faq.question, acceptedAnswer: { "@type": "Answer", text: faq.answer } })) };
-const breadcrumbSchema = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://carsforcashreddeer.ca/" }, { "@type": "ListItem", position: 2, name: "Cash for Junk Cars", item: "https://carsforcashreddeer.ca/cash-for-junk-cars/" }] };
+const breadcrumbSchema = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.carsforcashreddeer.ca/" }, { "@type": "ListItem", position: 2, name: "Cash for Junk Cars", item: "https://www.carsforcashreddeer.ca/cash-for-junk-cars/" }] };
 
 export default function CashForJunkCarsPage() {
   return (

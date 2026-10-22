@@ -41,24 +41,17 @@ export const metadata: Metadata = {
     title: "Free Scrap Car Removal Red Deer | Same-Day Pickup + Cash",
     description:
       "Free towing for old, dead or abandoned cars in Red Deer, with paperwork help and responsible recycling.",
-    url: "https://carsforcashreddeer.ca/scrap-car-removal/",
+    url: "https://www.carsforcashreddeer.ca/scrap-car-removal/",
     siteName: "Cars for Cash Red Deer",
     locale: "en_CA",
     type: "website",
-    images: [
-      {
-        url: "/assets/2011-mitsubishi-lancer.jpeg",
-        width: 1600,
-        height: 1200,
-        alt: "Scrap car being collected on a flatbed in Red Deer",
-      },
-    ],
+    images: [{ url: "/social-share.png", width: 1200, height: 630, alt: "Cars for Cash Red Deer" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Free Scrap Car Removal Red Deer | Same-Day Pickup + Cash",
     description: "Free towing, same-day pickup and responsible vehicle recycling in Red Deer.",
-    images: ["/assets/2011-mitsubishi-lancer.jpeg"],
+    images: ["/social-share.png"],
   },
 };
 
@@ -88,7 +81,7 @@ const scrapFaqs: FaqItem[] = [
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "@id": "https://carsforcashreddeer.ca/scrap-car-removal/#service",
+  "@id": "https://www.carsforcashreddeer.ca/scrap-car-removal/#service",
   name: "Scrap Car Removal Red Deer",
   serviceType: "Scrap car removal and vehicle disposal",
   description:
@@ -122,8 +115,8 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://carsforcashreddeer.ca/" },
-    { "@type": "ListItem", position: 2, name: "Scrap Car Removal", item: "https://carsforcashreddeer.ca/scrap-car-removal/" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.carsforcashreddeer.ca/" },
+    { "@type": "ListItem", position: 2, name: "Scrap Car Removal", item: "https://www.carsforcashreddeer.ca/scrap-car-removal/" },
   ],
 };
 

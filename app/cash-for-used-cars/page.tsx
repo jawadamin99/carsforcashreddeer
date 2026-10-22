@@ -42,17 +42,17 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Cash for Used Cars Red Deer | Sell Your Car Fast Today",
     description: "Sell your used car without listings, lowball trade-ins or strangers at your door.",
-    url: "https://carsforcashreddeer.ca/cash-for-used-cars/",
+    url: "https://www.carsforcashreddeer.ca/cash-for-used-cars/",
     siteName: "Cars for Cash Red Deer",
     locale: "en_CA",
     type: "website",
-    images: [{ url: "/assets/2017-lexus.jpeg", width: 1200, height: 1600, alt: "Used Lexus SUV in Red Deer" }],
+    images: [{ url: "/social-share.png", width: 1200, height: 630, alt: "Cars for Cash Red Deer" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Cash for Used Cars Red Deer | Sell Your Car Fast Today",
     description: "A firm cash offer, free pickup and same-day payment for used vehicles in Red Deer.",
-    images: ["/assets/2017-lexus.jpeg"],
+    images: ["/social-share.png"],
   },
 };
 
@@ -67,7 +67,7 @@ const usedCarFaqs: FaqItem[] = [
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "@id": "https://carsforcashreddeer.ca/cash-for-used-cars/#service",
+  "@id": "https://www.carsforcashreddeer.ca/cash-for-used-cars/#service",
   name: "Cash for Used Cars Red Deer",
   serviceType: "Used vehicle purchasing",
   description: "Fast cash offers for running used cars, trucks, SUVs, minivans and work vans in Red Deer, including vehicles with loans or mechanical issues.",
@@ -85,8 +85,8 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://carsforcashreddeer.ca/" },
-    { "@type": "ListItem", position: 2, name: "Cash for Used Cars", item: "https://carsforcashreddeer.ca/cash-for-used-cars/" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.carsforcashreddeer.ca/" },
+    { "@type": "ListItem", position: 2, name: "Cash for Used Cars", item: "https://www.carsforcashreddeer.ca/cash-for-used-cars/" },
   ],
 };
 

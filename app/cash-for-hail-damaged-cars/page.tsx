@@ -10,8 +10,8 @@ export const metadata: Metadata = {
   title: "Cash for Hail Damaged Cars Red Deer | Write-Offs Welcome",
   description: "Sell your hail damaged car in Red Deer and across Alberta. We buy dented, written-off and salvage-status vehicles as-is, with free pickup and cash paid on the spot.",
   alternates: { canonical: "https://www.carsforcashreddeer.ca/cash-for-hail-damaged-cars/" },
-  openGraph: { title: "Cash for Hail Damaged Cars Red Deer | Write-Offs Welcome", description: "Sell a dented, written-off or salvage-status vehicle as-is, with free pickup.", url: "https://carsforcashreddeer.ca/cash-for-hail-damaged-cars/", siteName: "Cars for Cash Red Deer", locale: "en_CA", type: "website", images: [{ url: "/assets/hyundai-tuscon.jpeg", width: 1320, height: 1267, alt: "Hail damaged vehicle buyer in Alberta" }] },
-  twitter: { card: "summary_large_image", title: "Cash for Hail Damaged Cars Red Deer | Write-Offs Welcome", description: "Cash offers for hail-damaged and written-off vehicles across Alberta.", images: ["/assets/hyundai-tuscon.jpeg"] },
+  openGraph: { title: "Cash for Hail Damaged Cars Red Deer | Write-Offs Welcome", description: "Sell a dented, written-off or salvage-status vehicle as-is, with free pickup.", url: "https://www.carsforcashreddeer.ca/cash-for-hail-damaged-cars/", siteName: "Cars for Cash Red Deer", locale: "en_CA", type: "website", images: [{ url: "/social-share.png", width: 1200, height: 630, alt: "Cars for Cash Red Deer" }] },
+  twitter: { card: "summary_large_image", title: "Cash for Hail Damaged Cars Red Deer | Write-Offs Welcome", description: "Cash offers for hail-damaged and written-off vehicles across Alberta.", images: ["/social-share.png"] },
 };
 
 const faqs: FaqItem[] = [
@@ -22,9 +22,9 @@ const faqs: FaqItem[] = [
   { question: "How fast can you buy my hail damaged car?", answer: "Most offers are made the same day, and pickup can often be arranged within one to two days." },
 ];
 
-const serviceSchema = { "@context": "https://schema.org", "@type": "Service", "@id": "https://carsforcashreddeer.ca/cash-for-hail-damaged-cars/#service", name: "Cash for Hail Damaged Cars Red Deer", serviceType: "Hail damaged and salvage vehicle purchasing", description: "Cash offers for hail-damaged, insurance write-off, salvage and rebuilt vehicles in Red Deer and Alberta.", provider: { "@type": "AutomotiveBusiness", "@id": "https://www.carsforcashreddeer.ca/#business", name: "Cars for Cash Red Deer", telephone: "[PHONE]" }, areaServed: ["Red Deer", "Sylvan Lake", "Lacombe", "Blackfalds", "Innisfail", "Penhold", "Alberta"] };
+const serviceSchema = { "@context": "https://schema.org", "@type": "Service", "@id": "https://www.carsforcashreddeer.ca/cash-for-hail-damaged-cars/#service", name: "Cash for Hail Damaged Cars Red Deer", serviceType: "Hail damaged and salvage vehicle purchasing", description: "Cash offers for hail-damaged, insurance write-off, salvage and rebuilt vehicles in Red Deer and Alberta.", provider: { "@type": "AutomotiveBusiness", "@id": "https://www.carsforcashreddeer.ca/#business", name: "Cars for Cash Red Deer", telephone: "[PHONE]" }, areaServed: ["Red Deer", "Sylvan Lake", "Lacombe", "Blackfalds", "Innisfail", "Penhold", "Alberta"] };
 const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((faq) => ({ "@type": "Question", name: faq.question, acceptedAnswer: { "@type": "Answer", text: faq.answer } })) };
-const breadcrumbSchema = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://carsforcashreddeer.ca/" }, { "@type": "ListItem", position: 2, name: "Cash for Hail Damaged Cars", item: "https://carsforcashreddeer.ca/cash-for-hail-damaged-cars/" }] };
+const breadcrumbSchema = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.carsforcashreddeer.ca/" }, { "@type": "ListItem", position: 2, name: "Cash for Hail Damaged Cars", item: "https://www.carsforcashreddeer.ca/cash-for-hail-damaged-cars/" }] };
 
 export default function CashForHailDamagedCarsPage() {
   return (

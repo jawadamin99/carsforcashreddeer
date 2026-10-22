@@ -10,8 +10,8 @@ export const metadata: Metadata = {
   title: "Cash for Cars Airdrie | Free Towing + Cash at Pickup",
   description: "Get cash for cars Airdrie, AB. We buy high-mileage commuters, junk cars, scrap vehicles and hail damaged cars as-is. Free towing and payment on the spot.",
   alternates: { canonical: "https://www.carsforcashreddeer.ca/cash-for-cars-airdrie/" },
-  openGraph: { title: "Cash for Cars Airdrie | Free Towing + Cash at Pickup", description: "Cash for high-mileage, junk, scrap and hail-damaged vehicles in Airdrie.", url: "https://carsforcashreddeer.ca/cash-for-cars-airdrie/", siteName: "Cars for Cash Red Deer", locale: "en_CA", type: "website", images: [{ url: "/assets/2014-chevy-equinox.jpg", width: 1320, height: 1267, alt: "Cash for cars in Airdrie" }] },
-  twitter: { card: "summary_large_image", title: "Cash for Cars Airdrie | Free Towing + Cash at Pickup", description: "Free towing and payment at pickup in Airdrie.", images: ["/assets/2014-chevy-equinox.jpg"] },
+  openGraph: { title: "Cash for Cars Airdrie | Free Towing + Cash at Pickup", description: "Cash for high-mileage, junk, scrap and hail-damaged vehicles in Airdrie.", url: "https://www.carsforcashreddeer.ca/cash-for-cars-airdrie/", siteName: "Cars for Cash Red Deer", locale: "en_CA", type: "website", images: [{ url: "/social-share.png", width: 1200, height: 630, alt: "Cars for Cash Red Deer" }] },
+  twitter: { card: "summary_large_image", title: "Cash for Cars Airdrie | Free Towing + Cash at Pickup", description: "Free towing and payment at pickup in Airdrie.", images: ["/social-share.png"] },
 };
 
 const faqs: FaqItem[] = [
@@ -21,9 +21,9 @@ const faqs: FaqItem[] = [
   { question: "Do you buy cars stored on acreages around Airdrie?", answer: "Yes. We collect vehicles from farms and acreages in Rocky View County, even if they have not moved for years." },
   { question: "I took a hail settlement. Can I still sell the car?", answer: "In most cases, yes. Check your settlement paperwork for any conditions, then send us photos for a quote." },
 ];
-const serviceSchema = { "@context": "https://schema.org", "@type": "Service", "@id": "https://carsforcashreddeer.ca/cash-for-cars-airdrie/#service", name: "Cash for Cars Airdrie", serviceType: "Vehicle purchasing and free vehicle towing", description: "Cash offers for used, junk, scrap and hail-damaged vehicles in Airdrie with free towing and payment at pickup.", provider: { "@type": "AutomotiveBusiness", "@id": "https://www.carsforcashreddeer.ca/#business", name: "Cars for Cash Red Deer", telephone: "[PHONE]" }, areaServed: { "@type": "City", name: "Airdrie", containedInPlace: { "@type": "AdministrativeArea", name: "Alberta" } } };
+const serviceSchema = { "@context": "https://schema.org", "@type": "Service", "@id": "https://www.carsforcashreddeer.ca/cash-for-cars-airdrie/#service", name: "Cash for Cars Airdrie", serviceType: "Vehicle purchasing and free vehicle towing", description: "Cash offers for used, junk, scrap and hail-damaged vehicles in Airdrie with free towing and payment at pickup.", provider: { "@type": "AutomotiveBusiness", "@id": "https://www.carsforcashreddeer.ca/#business", name: "Cars for Cash Red Deer", telephone: "[PHONE]" }, areaServed: { "@type": "City", name: "Airdrie", containedInPlace: { "@type": "AdministrativeArea", name: "Alberta" } } };
 const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((faq) => ({ "@type": "Question", name: faq.question, acceptedAnswer: { "@type": "Answer", text: faq.answer } })) };
-const breadcrumbSchema = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://carsforcashreddeer.ca/" }, { "@type": "ListItem", position: 2, name: "Cash for Cars Airdrie", item: "https://carsforcashreddeer.ca/cash-for-cars-airdrie/" }] };
+const breadcrumbSchema = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.carsforcashreddeer.ca/" }, { "@type": "ListItem", position: 2, name: "Cash for Cars Airdrie", item: "https://www.carsforcashreddeer.ca/cash-for-cars-airdrie/" }] };
 
 export default function CashForCarsAirdriePage() {
   return <main className="airdrie-page">

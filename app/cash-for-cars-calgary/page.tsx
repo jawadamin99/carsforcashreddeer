@@ -10,8 +10,8 @@ export const metadata: Metadata = {
   title: "Cash for Cars Calgary | Free Towing, Paid on Pickup",
   description: "Cash for cars in Calgary, NE to SW. We buy used, junk, scrap and hail damaged vehicles in any condition with free towing and payment at pickup. Get your offer today.",
   alternates: { canonical: "https://www.carsforcashreddeer.ca/cash-for-cars-calgary/" },
-  openGraph: { title: "Cash for Cars Calgary | Free Towing, Paid on Pickup", description: "Cash offers for used, junk, scrap and hail-damaged vehicles across Calgary.", url: "https://carsforcashreddeer.ca/cash-for-cars-calgary/", siteName: "Cars for Cash Red Deer", locale: "en_CA", type: "website", images: [{ url: "/assets/2017-lexus.jpeg", width: 1320, height: 1267, alt: "Cash for cars in Calgary" }] },
-  twitter: { card: "summary_large_image", title: "Cash for Cars Calgary | Free Towing, Paid on Pickup", description: "Free towing and payment at pickup across Calgary.", images: ["/assets/2017-lexus.jpeg"] },
+  openGraph: { title: "Cash for Cars Calgary | Free Towing, Paid on Pickup", description: "Cash offers for used, junk, scrap and hail-damaged vehicles across Calgary.", url: "https://www.carsforcashreddeer.ca/cash-for-cars-calgary/", siteName: "Cars for Cash Red Deer", locale: "en_CA", type: "website", images: [{ url: "/social-share.png", width: 1200, height: 630, alt: "Cars for Cash Red Deer" }] },
+  twitter: { card: "summary_large_image", title: "Cash for Cars Calgary | Free Towing, Paid on Pickup", description: "Free towing and payment at pickup across Calgary.", images: ["/social-share.png"] },
 };
 
 const faqs: FaqItem[] = [
@@ -22,9 +22,9 @@ const faqs: FaqItem[] = [
   { question: "Do you buy cars that failed an out-of-province inspection?", answer: "Yes. Vehicles brought to Alberta that failed inspection are a common purchase for us." },
 ];
 
-const serviceSchema = { "@context": "https://schema.org", "@type": "Service", "@id": "https://carsforcashreddeer.ca/cash-for-cars-calgary/#service", name: "Cash for Cars Calgary", serviceType: "Vehicle purchasing and free vehicle towing", description: "Cash offers for used, junk, scrap and hail-damaged vehicles in Calgary, with free towing and payment at pickup.", provider: { "@type": "AutomotiveBusiness", "@id": "https://www.carsforcashreddeer.ca/#business", name: "Cars for Cash Red Deer", telephone: "[PHONE]" }, areaServed: { "@type": "City", name: "Calgary", containedInPlace: { "@type": "AdministrativeArea", name: "Alberta" } } };
+const serviceSchema = { "@context": "https://schema.org", "@type": "Service", "@id": "https://www.carsforcashreddeer.ca/cash-for-cars-calgary/#service", name: "Cash for Cars Calgary", serviceType: "Vehicle purchasing and free vehicle towing", description: "Cash offers for used, junk, scrap and hail-damaged vehicles in Calgary, with free towing and payment at pickup.", provider: { "@type": "AutomotiveBusiness", "@id": "https://www.carsforcashreddeer.ca/#business", name: "Cars for Cash Red Deer", telephone: "[PHONE]" }, areaServed: { "@type": "City", name: "Calgary", containedInPlace: { "@type": "AdministrativeArea", name: "Alberta" } } };
 const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((faq) => ({ "@type": "Question", name: faq.question, acceptedAnswer: { "@type": "Answer", text: faq.answer } })) };
-const breadcrumbSchema = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://carsforcashreddeer.ca/" }, { "@type": "ListItem", position: 2, name: "Cash for Cars Calgary", item: "https://carsforcashreddeer.ca/cash-for-cars-calgary/" }] };
+const breadcrumbSchema = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.carsforcashreddeer.ca/" }, { "@type": "ListItem", position: 2, name: "Cash for Cars Calgary", item: "https://www.carsforcashreddeer.ca/cash-for-cars-calgary/" }] };
 
 const services = [
   { icon: CarFront, title: "Cash for Used Cars", text: "Skip the private sale. We buy running vehicles of any age and mileage, including high-kilometre commuters, family SUVs and work trucks.", href: "/cash-for-used-cars/", link: "Sell a used car" },

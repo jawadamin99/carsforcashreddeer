@@ -10,8 +10,8 @@ export const metadata: Metadata = {
   title: "Cash for Cars Lethbridge | We Buy Any Car, Free Pickup",
   description: "Cash for cars Lethbridge, AB. We buy used, junk, scrap and hail damaged vehicles, including farm trucks and student cars. Free towing and payment at pickup.",
   alternates: { canonical: "https://www.carsforcashreddeer.ca/cash-for-cars-lethbridge/" },
-  openGraph: { title: "Cash for Cars Lethbridge | We Buy Any Car, Free Pickup", description: "Cash offers for cars, farm trucks and problem vehicles across Lethbridge.", url: "https://carsforcashreddeer.ca/cash-for-cars-lethbridge/", siteName: "Cars for Cash Red Deer", locale: "en_CA", type: "website", images: [{ url: "/assets/2017 Chevy Silverado.jpeg", width: 1320, height: 1267, alt: "Cash for cars and farm trucks in Lethbridge" }] },
-  twitter: { card: "summary_large_image", title: "Cash for Cars Lethbridge | We Buy Any Car, Free Pickup", description: "Free scheduled pickup and payment on the spot in Lethbridge.", images: ["/assets/2017 Chevy Silverado.jpeg"] },
+  openGraph: { title: "Cash for Cars Lethbridge | We Buy Any Car, Free Pickup", description: "Cash offers for cars, farm trucks and problem vehicles across Lethbridge.", url: "https://www.carsforcashreddeer.ca/cash-for-cars-lethbridge/", siteName: "Cars for Cash Red Deer", locale: "en_CA", type: "website", images: [{ url: "/social-share.png", width: 1200, height: 630, alt: "Cars for Cash Red Deer" }] },
+  twitter: { card: "summary_large_image", title: "Cash for Cars Lethbridge | We Buy Any Car, Free Pickup", description: "Free scheduled pickup and payment on the spot in Lethbridge.", images: ["/social-share.png"] },
 };
 const faqs: FaqItem[] = [
   { question: "Do you really come to Lethbridge from Red Deer?", answer: "Yes. Lethbridge pickups are available daily, and towing is free." },
@@ -20,9 +20,9 @@ const faqs: FaqItem[] = [
   { question: "Can I sell my car before I move away after school?", answer: "Yes. Book early and we will try to match a pickup day to your move-out date." },
   { question: "Do you pick up outside the city?", answer: "Yes. We cover Coaldale, Coalhurst, Picture Butte, Raymond and the wider county." },
 ];
-const serviceSchema = { "@context": "https://schema.org", "@type": "Service", "@id": "https://carsforcashreddeer.ca/cash-for-cars-lethbridge/#service", name: "Cash for Cars Lethbridge", serviceType: "Vehicle purchasing and free scheduled vehicle pickup", description: "Cash offers for used, junk, scrap, farm and hail-damaged vehicles in Lethbridge with free pickup.", provider: { "@type": "AutomotiveBusiness", "@id": "https://www.carsforcashreddeer.ca/#business", name: "Cars for Cash Red Deer", telephone: "[PHONE]" }, areaServed: { "@type": "City", name: "Lethbridge", containedInPlace: { "@type": "AdministrativeArea", name: "Alberta" } } };
+const serviceSchema = { "@context": "https://schema.org", "@type": "Service", "@id": "https://www.carsforcashreddeer.ca/cash-for-cars-lethbridge/#service", name: "Cash for Cars Lethbridge", serviceType: "Vehicle purchasing and free scheduled vehicle pickup", description: "Cash offers for used, junk, scrap, farm and hail-damaged vehicles in Lethbridge with free pickup.", provider: { "@type": "AutomotiveBusiness", "@id": "https://www.carsforcashreddeer.ca/#business", name: "Cars for Cash Red Deer", telephone: "[PHONE]" }, areaServed: { "@type": "City", name: "Lethbridge", containedInPlace: { "@type": "AdministrativeArea", name: "Alberta" } } };
 const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((faq) => ({ "@type": "Question", name: faq.question, acceptedAnswer: { "@type": "Answer", text: faq.answer } })) };
-const breadcrumbSchema = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://carsforcashreddeer.ca/" }, { "@type": "ListItem", position: 2, name: "Cash for Cars Lethbridge", item: "https://carsforcashreddeer.ca/cash-for-cars-lethbridge/" }] };
+const breadcrumbSchema = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.carsforcashreddeer.ca/" }, { "@type": "ListItem", position: 2, name: "Cash for Cars Lethbridge", item: "https://www.carsforcashreddeer.ca/cash-for-cars-lethbridge/" }] };
 
 export default function CashForCarsLethbridgePage() {
   return <main className="leth-page">

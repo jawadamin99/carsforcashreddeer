@@ -81,10 +81,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/assets/2011-mitsubishi-lancer.jpeg",
-        width: 1600,
-        height: 1200,
-        alt: "Vehicle ready for free towing in Red Deer",
+        url: "/social-share.png",
+        width: 1200,
+        height: 630,
+        alt: "Cars for Cash Red Deer",
       },
     ],
   },
@@ -93,7 +93,7 @@ export const metadata: Metadata = {
     title: "Cash for Cars Red Deer | Top Dollar + Free Towing Today",
     description:
       "Any make, any condition. Get a fast cash offer with free towing in Red Deer.",
-    images: ["/assets/2011-mitsubishi-lancer.jpeg"],
+    images: ["/social-share.png"],
   },
   robots: { index: true, follow: true },
 };

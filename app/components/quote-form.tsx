@@ -21,7 +21,7 @@ export default function QuoteForm() {
       const response = await fetch("/api/quote", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(Object.fromEntries(formData.entries())),
+        body: JSON.stringify({ ...Object.fromEntries(formData.entries()), pageUrl: window.location.href }),
       });
       const result = await response.json() as { error?: string };
       if (!response.ok) throw new Error(result.error || "Unable to send your request.");
