@@ -23,21 +23,15 @@ const faqs: FaqItem[] = [
   { question: "How soon can I get paid?", answer: "Payment is made at pickup, and same-day pickup is often available in Red Deer." },
 ];
 
-const serviceSchema = { "@context": "https://schema.org", "@type": "Service", "@id": "https://www.carsforcashreddeer.ca/cash-for-junk-cars/#service", name: "Cash for Junk Cars Red Deer", serviceType: "Junk and non-running vehicle purchasing", description: "Cash offers for broken, failed, non-running and neglected vehicles in Red Deer with free towing.", provider: { "@type": "AutomotiveBusiness", "@id": "https://www.carsforcashreddeer.ca/#business", name: "Cars for Cash Red Deer", telephone: "[PHONE]" }, areaServed: ["Red Deer", "Sylvan Lake", "Blackfalds", "Lacombe", "Penhold", "Innisfail", "Red Deer County"] };
-const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((faq) => ({ "@type": "Question", name: faq.question, acceptedAnswer: { "@type": "Answer", text: faq.answer } })) };
-const breadcrumbSchema = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.carsforcashreddeer.ca/" }, { "@type": "ListItem", position: 2, name: "Cash for Junk Cars", item: "https://www.carsforcashreddeer.ca/cash-for-junk-cars/" }] };
 
 export default function CashForJunkCarsPage() {
   return (
     <main className="junk-page">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       <section className="junk-hero">
         <div className="junk-hero-photo" aria-hidden="true"><Image src="/assets/2011-mitsubishi-lancer.jpeg" alt="" fill priority sizes="100vw" className="cover-image" /></div><div className="junk-hero-overlay" aria-hidden="true" />
         <div className="page-shell junk-hero-layout"><SiteHeader />
-          <div className="junk-hero-copy"><nav className="page-breadcrumbs" aria-label="Breadcrumb"><Link href="/"><Home aria-hidden="true" /> Home</Link><span>/</span><span>Cash for Junk Cars</span></nav><span className="eyebrow">Running or not, it still has value</span><h1>Cash for Junk Cars <em>Red Deer</em></h1><p>Dead engine, failed inspection, missing parts or years in the yard—we buy your vehicle as-is and tow it free.</p><div className="junk-hero-actions"><a href="#quote" className="primary-button">Get an instant offer <ArrowRight aria-hidden="true" /></a><a href="tel:[PHONE]" className="text-link"><Phone aria-hidden="true" /> [PHONE]</a></div><div className="junk-hero-proof"><span><BatteryWarning aria-hidden="true" /> Non-runners welcome</span><span><Truck aria-hidden="true" /> Free towing</span><span><Banknote aria-hidden="true" /> Paid at pickup</span></div></div>
+          <div className="junk-hero-copy"><nav className="page-breadcrumbs" aria-label="Breadcrumb"><Link href="/"><Home aria-hidden="true" /> Home</Link><span>/</span><span>Cash for Junk Cars</span></nav><span className="eyebrow">Running or not, it still has value</span><h2 className="page-title">Cash for Junk Cars <em>Red Deer</em></h2><p>Dead engine, failed inspection, missing parts or years in the yard—we buy your vehicle as-is and tow it free.</p><div className="junk-hero-actions"><a href="#quote" className="primary-button">Get an instant offer <ArrowRight aria-hidden="true" /></a><a href="tel:[PHONE]" className="text-link"><Phone aria-hidden="true" /> [PHONE]</a></div><div className="junk-hero-proof"><span><BatteryWarning aria-hidden="true" /> Non-runners welcome</span><span><Truck aria-hidden="true" /> Free towing</span><span><Banknote aria-hidden="true" /> Paid at pickup</span></div></div>
           <QuoteForm />
         </div>
       </section>

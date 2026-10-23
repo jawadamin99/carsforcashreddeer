@@ -104,34 +104,9 @@ const faqs: FaqItem[] = [
   },
 ];
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faqs.map((faq) => ({
-    "@type": "Question",
-    name: faq.question,
-    acceptedAnswer: { "@type": "Answer", text: faq.answer },
-  })),
-};
-
-const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    {
-      "@type": "ListItem",
-      position: 1,
-      name: "Cash for Cars Red Deer",
-      item: "https://www.carsforcashreddeer.ca/",
-    },
-  ],
-};
-
 export default function Home() {
   return (
     <main>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       <section className="hero">
         <div className="hero-image" aria-hidden="true">
@@ -150,7 +125,7 @@ export default function Home() {
           <SiteHeader />
           <div className="hero-content">
             <p className="location-kicker"><MapPin size={17} aria-hidden="true" /> Red Deer, Alberta</p>
-            <h1>Cash for Cars <em>Red Deer, AB</em></h1>
+            <h2 className="page-title">Cash for Cars <em>Red Deer, AB</em></h2>
             <p className="hero-copy">
               Any make. Any condition. A firm offer, free towing and payment on the spot—usually today or tomorrow.
             </p>

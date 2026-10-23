@@ -64,38 +64,9 @@ const usedCarFaqs: FaqItem[] = [
   { question: "Do you buy cars that are not registered in my name?", answer: "We can only buy from the registered owner or someone legally authorized to sell, such as an estate executor, with the right documents." },
 ];
 
-const serviceSchema = {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "@id": "https://www.carsforcashreddeer.ca/cash-for-used-cars/#service",
-  name: "Cash for Used Cars Red Deer",
-  serviceType: "Used vehicle purchasing",
-  description: "Fast cash offers for running used cars, trucks, SUVs, minivans and work vans in Red Deer, including vehicles with loans or mechanical issues.",
-  provider: { "@type": "AutomotiveBusiness", "@id": "https://www.carsforcashreddeer.ca/#business", name: "Cars for Cash Red Deer", telephone: "[PHONE]" },
-  areaServed: ["Red Deer", "Sylvan Lake", "Blackfalds", "Lacombe", "Penhold", "Innisfail"],
-};
-
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: usedCarFaqs.map((faq) => ({ "@type": "Question", name: faq.question, acceptedAnswer: { "@type": "Answer", text: faq.answer } })),
-};
-
-const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.carsforcashreddeer.ca/" },
-    { "@type": "ListItem", position: 2, name: "Cash for Used Cars", item: "https://www.carsforcashreddeer.ca/cash-for-used-cars/" },
-  ],
-};
-
 export default function CashForUsedCarsPage() {
   return (
     <main className="used-page">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       <section className="used-hero">
         <div className="used-hero-photo" aria-hidden="true"><Image src="/assets/2017-lexus.jpeg" alt="" fill priority sizes="100vw" className="cover-image" /></div>
@@ -105,7 +76,7 @@ export default function CashForUsedCarsPage() {
           <div className="used-hero-copy">
             <nav className="page-breadcrumbs" aria-label="Breadcrumb"><Link href="/"><Home aria-hidden="true" /> Home</Link><span>/</span><span>Cash for Used Cars</span></nav>
             <span className="eyebrow">Skip the listing. Keep your time.</span>
-            <h1>Cash for Used Cars <em>Red Deer</em></h1>
+            <h2 className="page-title">Cash for Used Cars <em>Red Deer</em></h2>
             <p>One call gets you a firm offer. We collect the vehicle on your schedule and pay you on the spot.</p>
             <div className="used-hero-actions"><a href="#quote" className="primary-button">Get a free valuation <ArrowRight aria-hidden="true" /></a><a href="tel:[PHONE]" className="text-link"><Phone aria-hidden="true" /> [PHONE]</a></div>
             <div className="used-hero-proof"><span><Timer aria-hidden="true" /> Fast firm offers</span><span><Truck aria-hidden="true" /> Free pickup</span><span><Banknote aria-hidden="true" /> Same-day payment</span></div>

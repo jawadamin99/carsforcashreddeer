@@ -78,54 +78,9 @@ const scrapFaqs: FaqItem[] = [
   },
 ];
 
-const serviceSchema = {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "@id": "https://www.carsforcashreddeer.ca/scrap-car-removal/#service",
-  name: "Scrap Car Removal Red Deer",
-  serviceType: "Scrap car removal and vehicle disposal",
-  description:
-    "Free scrap car removal in Red Deer with towing, paperwork assistance, responsible recycling and payment at pickup.",
-  provider: {
-    "@type": "AutomotiveBusiness",
-    "@id": "https://www.carsforcashreddeer.ca/#business",
-    name: "Cars for Cash Red Deer",
-    telephone: "[PHONE]",
-  },
-  areaServed: ["Red Deer", "Sylvan Lake", "Blackfalds", "Lacombe", "Penhold", "Innisfail", "Springbrook", "Red Deer County"],
-  offers: {
-    "@type": "Offer",
-    price: "0",
-    priceCurrency: "CAD",
-    description: "Free vehicle pickup and towing",
-  },
-};
-
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: scrapFaqs.map((faq) => ({
-    "@type": "Question",
-    name: faq.question,
-    acceptedAnswer: { "@type": "Answer", text: faq.answer },
-  })),
-};
-
-const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.carsforcashreddeer.ca/" },
-    { "@type": "ListItem", position: 2, name: "Scrap Car Removal", item: "https://www.carsforcashreddeer.ca/scrap-car-removal/" },
-  ],
-};
-
 export default function ScrapCarRemovalPage() {
   return (
     <main className="scrap-page">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       <section className="scrap-hero">
         <div className="scrap-hero-photo" aria-hidden="true">
@@ -139,7 +94,7 @@ export default function ScrapCarRemovalPage() {
               <Link href="/"><Home aria-hidden="true" /> Home</Link><span>/</span><span>Scrap Car Removal</span>
             </nav>
             <span className="eyebrow">Free towing across Red Deer</span>
-            <h1>Scrap Car Removal <em>Red Deer</em></h1>
+            <h2 className="page-title">Scrap Car Removal <em>Red Deer</em></h2>
             <p>We collect old, dead and abandoned vehicles, handle the paperwork, recycle them properly and pay you when they leave.</p>
             <div className="scrap-hero-actions">
               <a href="#quote" className="primary-button">Book free removal <ArrowRight aria-hidden="true" /></a>

@@ -12,27 +12,6 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image", title: "About Cars for Cash Red Deer", description: "Meet the local Central Alberta vehicle buyers.", images: ["/social-share.png"] },
 };
 
-const aboutSchema = {
-  "@context": "https://schema.org",
-  "@type": "AboutPage",
-  "@id": "https://www.carsforcashreddeer.ca/about/#page",
-  url: "https://www.carsforcashreddeer.ca/about/",
-  name: "About Cars for Cash Red Deer",
-  description: "The story, service promises and responsible vehicle handling practices of Cars for Cash Red Deer.",
-  about: { "@id": "https://www.carsforcashreddeer.ca/#business" },
-  breadcrumb: { "@id": "https://www.carsforcashreddeer.ca/about/#breadcrumb" },
-};
-const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "AutomotiveBusiness",
-  "@id": "https://www.carsforcashreddeer.ca/#business",
-  name: "Cars for Cash Red Deer",
-  url: "https://www.carsforcashreddeer.ca/",
-  address: { "@type": "PostalAddress", streetAddress: "74C Clearview Dr", addressLocality: "Red Deer", addressRegion: "AB", postalCode: "T4E 0A1", addressCountry: "CA" },
-  areaServed: ["Red Deer", "Central Alberta", "Calgary", "Airdrie", "Lethbridge"],
-};
-const breadcrumbSchema = { "@context": "https://schema.org", "@type": "BreadcrumbList", "@id": "https://www.carsforcashreddeer.ca/about/#breadcrumb", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.carsforcashreddeer.ca/" }, { "@type": "ListItem", position: 2, name: "About", item: "https://www.carsforcashreddeer.ca/about/" }] };
-
 const promises = [
   { icon: Scale, title: "A clear, firm offer", text: "We explain the vehicle's metal value, useful parts, resale potential and the effect of damage. If the car matches your description, the offer is what we pay." },
   { icon: Truck, title: "No hidden fees", text: "Towing is free. There are no fuel charges, difficult-access fees or surprise deductions at pickup." },
@@ -43,9 +22,8 @@ const promises = [
 
 export default function AboutPage() {
   return <main className="about-page">
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }} /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
-    <section className="about-hero"><div className="about-hero-image" aria-hidden="true"><Image src="/assets/2016-ford-f160.jpeg" alt="" fill priority sizes="100vw" className="cover-image" /></div><div className="about-hero-overlay" aria-hidden="true" /><div className="page-shell about-hero-inner"><SiteHeader /><div className="about-hero-copy"><nav className="page-breadcrumbs" aria-label="Breadcrumb"><Link href="/"><Home aria-hidden="true" /> Home</Link><span>/</span><span>About</span></nav><span className="eyebrow">Local car buyers. Straight answers.</span><h1>About Cars for Cash <em>Red Deer</em></h1><p>We built a simpler, fairer way for Central Alberta drivers to sell unwanted vehicles—whatever the make, age or condition.</p><div><Link className="primary-button" href="/#quote">Talk to our team <ArrowRight aria-hidden="true" /></Link><Link className="text-link" href="/how-it-works/">See how it works <ArrowRight aria-hidden="true" /></Link></div></div><div className="about-hero-note"><MapPin aria-hidden="true" /><span>Local base</span><strong>74C Clearview Dr</strong><small>Red Deer, Alberta T4E 0A1</small></div></div></section>
+    <section className="about-hero"><div className="about-hero-image" aria-hidden="true"><Image src="/assets/2016-ford-f160.jpeg" alt="" fill priority sizes="100vw" className="cover-image" /></div><div className="about-hero-overlay" aria-hidden="true" /><div className="page-shell about-hero-inner"><SiteHeader /><div className="about-hero-copy"><nav className="page-breadcrumbs" aria-label="Breadcrumb"><Link href="/"><Home aria-hidden="true" /> Home</Link><span>/</span><span>About</span></nav><span className="eyebrow">Local car buyers. Straight answers.</span><h2 className="page-title">About Cars for Cash <em>Red Deer</em></h2><p>We built a simpler, fairer way for Central Alberta drivers to sell unwanted vehicles—whatever the make, age or condition.</p><div><Link className="primary-button" href="/#quote">Talk to our team <ArrowRight aria-hidden="true" /></Link><Link className="text-link" href="/how-it-works/">See how it works <ArrowRight aria-hidden="true" /></Link></div></div><div className="about-hero-note"><MapPin aria-hidden="true" /><span>Local base</span><strong>74C Clearview Dr</strong><small>Red Deer, Alberta T4E 0A1</small></div></div></section>
 
     <section className="about-intro section-pad"><div className="page-shell about-intro-grid"><div><span className="eyebrow dark">Why we exist</span><h2>Selling an unwanted car was harder than it needed to be.</h2></div><div><p className="lead">Private sales dragged on for weeks, trade-in offers were low, and owners of broken-down vehicles were often told to pay someone to take them away.</p><p>Cars for Cash Red Deer is a local Central Alberta business that buys cars, trucks, SUVs and vans in any condition. We started because sellers deserved a simpler, fairer option.</p></div></div></section>
 
