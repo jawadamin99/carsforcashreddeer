@@ -29,6 +29,15 @@ function emailIsValid(value: string) {
 }
 
 export async function POST(request: Request) {
+  if (!request.headers.get("content-type")?.toLowerCase().includes("application/json")) {
+    return NextResponse.json({ error: "Unsupported request format." }, { status: 415 });
+  }
+
+  const contentLength = Number(request.headers.get("content-length") || 0);
+  if (Number.isFinite(contentLength) && contentLength > 25_000) {
+    return NextResponse.json({ error: "The request is too large." }, { status: 413 });
+  }
+
   let payload: QuotePayload;
   try {
     payload = await request.json() as QuotePayload;
@@ -56,13 +65,13 @@ export async function POST(request: Request) {
   const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, CONTACT_FROM, CONTACT_TO, CONTACT_CC } = process.env;
   if (!SMTP_HOST || !SMTP_PORT || !SMTP_USER || !SMTP_PASS || !CONTACT_FROM || !CONTACT_TO) {
     console.error("Quote email configuration is incomplete.");
-    return NextResponse.json({ error: "Email delivery is not configured yet. Please call us instead." }, { status: 503 });
+    return NextResponse.json({ error: "Email delivery is not configured yet. Please call (587) 821-3848 instead." }, { status: 503 });
   }
 
-  const port = Number.parseInt(SMTP_PORT, 10);
+  const port = /^\d+$/.test(SMTP_PORT) ? Number(SMTP_PORT) : Number.NaN;
   if (!Number.isInteger(port) || port < 1 || port > 65535) {
     console.error("SMTP_PORT is invalid.");
-    return NextResponse.json({ error: "Email delivery is not configured yet. Please call us instead." }, { status: 503 });
+    return NextResponse.json({ error: "Email delivery is not configured yet. Please call (587) 821-3848 instead." }, { status: 503 });
   }
 
   const transporter = nodemailer.createTransport({
@@ -70,6 +79,9 @@ export async function POST(request: Request) {
     port,
     secure: port === 465,
     auth: { user: SMTP_USER, pass: SMTP_PASS },
+    connectionTimeout: 10_000,
+    greetingTimeout: 10_000,
+    socketTimeout: 20_000,
   });
 
   const safe = Object.fromEntries(Object.entries(quote).map(([key, value]) => [key, escapeHtml(value)])) as typeof quote;
@@ -85,7 +97,7 @@ export async function POST(request: Request) {
     await transporter.sendMail({
       from: CONTACT_FROM,
       to: CONTACT_TO,
-      bcc: CONTACT_CC || undefined,
+      bcc: CONTACT_CC?.trim() || undefined,
       replyTo: quote.email || undefined,
       subject: `New cash offer request — ${subjectVehicle} — ${subjectName}`,
       text: [
@@ -110,7 +122,7 @@ export async function POST(request: Request) {
     });
   } catch (error) {
     console.error("Quote email delivery failed:", error);
-    return NextResponse.json({ error: "We could not send your request. Please try again or call us." }, { status: 502 });
+    return NextResponse.json({ error: "We could not send your request. Please try again or call (587) 821-3848." }, { status: 502 });
   }
 
   return NextResponse.json({ ok: true });

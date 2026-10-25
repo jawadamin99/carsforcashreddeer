@@ -89,9 +89,9 @@ export default function SiteHeader() {
         <Link href="/contact/" onClick={close}>Contact</Link>
       </nav>
 
-      <a className="header-call" href="tel:[PHONE]" aria-label="Call Cars for Cash Red Deer">
+      <a className="header-call" href="tel:+15878213848" aria-label="Call Cars for Cash Red Deer">
         <Phone size={18} aria-hidden="true" />
-        <span>[PHONE]</span>
+        <span>(587) 821-3848</span>
       </a>
     </header>
   );

@@ -98,7 +98,7 @@ export default function ScrapCarRemovalPage() {
             <p>We collect old, dead and abandoned vehicles, handle the paperwork, recycle them properly and pay you when they leave.</p>
             <div className="scrap-hero-actions">
               <a href="#quote" className="primary-button">Book free removal <ArrowRight aria-hidden="true" /></a>
-              <a href="tel:[PHONE]" className="text-link"><Phone aria-hidden="true" /> [PHONE]</a>
+              <a href="tel:+15878213848" className="text-link"><Phone aria-hidden="true" /> (587) 821-3848</a>
             </div>
             <div className="scrap-hero-proof">
               <span><Truck aria-hidden="true" /> Free pickup</span>
@@ -120,7 +120,7 @@ export default function ScrapCarRemovalPage() {
             <p className="lead">An old car that no longer runs becomes a problem the moment it stops being transport.</p>
             <p>It takes up a parking spot, it leaks onto the driveway, your condo board or landlord wants it gone, and the City of Red Deer can issue a notice if it sits unregistered on the street. Arranging a tow truck yourself costs money, and most scrapyards will not come to you.</p>
             <p>Our scrap car removal service fixes all of that. We come to wherever the car is, tow it away for free, handle the paperwork, recycle it properly and pay you for it. You do not lift a finger beyond signing the bill of sale.</p>
-            <a className="scrap-inline-cta" href="tel:[PHONE]">Call [PHONE] to book a free scrap car pickup, often the same day. <ArrowRight aria-hidden="true" /></a>
+            <a className="scrap-inline-cta" href="tel:+15878213848">Call (587) 821-3848 to book a free scrap car pickup, often the same day. <ArrowRight aria-hidden="true" /></a>
           </div>
         </div>
       </section>
@@ -166,7 +166,7 @@ export default function ScrapCarRemovalPage() {
             <p>Knowing exactly what to expect removes the stress from the process. Most pickups take under 30 minutes.</p>
           </div>
           <div className="pickup-steps">
-            <article><span>01</span><CalendarCheck aria-hidden="true" /><h3>Booking</h3><p>Call [PHONE] or submit the form with the year, make, model, location and condition. We confirm the offer and pickup window.</p></article>
+            <article><span>01</span><CalendarCheck aria-hidden="true" /><h3>Booking</h3><p>Call (587) 821-3848 or submit the form with the year, make, model, location and condition. We confirm the offer and pickup window.</p></article>
             <article><span>02</span><PackageOpen aria-hidden="true" /><h3>Preparation</h3><p>Remove personal items, licence plates, garage door openers and any toll or parking passes.</p></article>
             <article><span>03</span><Truck aria-hidden="true" /><h3>Arrival</h3><p>Our driver arrives in the booked window, checks the VIN against your registration and confirms the condition.</p></article>
             <article><span>04</span><ClipboardCheck aria-hidden="true" /><h3>Paperwork</h3><p>Show photo ID and registration, then complete the bill of sale with us. If something is missing, we explain the next step.</p></article>
@@ -250,7 +250,7 @@ export default function ScrapCarRemovalPage() {
 
       <section className="faq section-pad" id="faq">
         <div className="page-shell faq-grid">
-          <div className="faq-heading"><span className="eyebrow dark">Before we collect</span><h2>Scrap car removal FAQs</h2><p>Have a difficult-access vehicle or unusual paperwork? Call [PHONE] and describe the situation.</p></div>
+          <div className="faq-heading"><span className="eyebrow dark">Before we collect</span><h2>Scrap car removal FAQs</h2><p>Have a difficult-access vehicle or unusual paperwork? Call (587) 821-3848 and describe the situation.</p></div>
           <FaqList items={scrapFaqs} />
         </div>
       </section>
@@ -262,14 +262,14 @@ export default function ScrapCarRemovalPage() {
           <span className="eyebrow">Clear the space today</span>
           <h2>Book your free scrap car removal.</h2>
           <p>That old car will not get more valuable sitting in your driveway. Book a free pickup now and get paid when it leaves.</p>
-          <div><a href="#quote" className="primary-button">Request free removal <ArrowRight aria-hidden="true" /></a><a href="tel:[PHONE]" className="text-link"><Phone aria-hidden="true" /> Call [PHONE]</a></div>
+          <div><a href="#quote" className="primary-button">Request free removal <ArrowRight aria-hidden="true" /></a><a href="tel:+15878213848" className="text-link"><Phone aria-hidden="true" /> Call (587) 821-3848</a></div>
         </div>
       </section>
 
       <footer className="site-footer">
         <div className="page-shell footer-grid">
           <div className="footer-brand"><Image src="/assets/carsfircashreddeer-logo.png" width={2172} height={724} alt="Cars for Cash Red Deer" /><p>Free scrap car pickup and straightforward cash offers across Red Deer and Central Alberta.</p></div>
-          <div><h2>Contact</h2><a href="tel:[PHONE]">[PHONE]</a><span>74C Clearview Dr, Red Deer, AB T4E 0A1</span><span>Open daily, 7:00 AM–11:00 PM</span></div>
+          <div><h2>Contact</h2><a href="tel:+15878213848">(587) 821-3848</a><span>74C Clearview Dr, Red Deer, AB T4E 0A1</span><span>Open daily, 7:00 AM–11:00 PM</span></div>
           <div><h2>Services</h2><Link href="/scrap-car-removal/">Scrap Car Removal</Link><Link href="/cash-for-used-cars/">Cash for Used Cars</Link><Link href="/cash-for-junk-cars/">Cash for Junk Cars</Link><Link href="/cash-for-scrap-cars/">Cash for Scrap Cars</Link><Link href="/cash-for-hail-damaged-cars/">Hail Damaged Cars</Link></div>
           <div><h2>Locations</h2><Link href="/cash-for-cars-calgary/">Calgary</Link><Link href="/cash-for-cars-airdrie/">Airdrie</Link><Link href="/cash-for-cars-lethbridge/">Lethbridge</Link></div>
         </div>

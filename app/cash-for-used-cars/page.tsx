@@ -78,7 +78,7 @@ export default function CashForUsedCarsPage() {
             <span className="eyebrow">Skip the listing. Keep your time.</span>
             <h2 className="page-title">Cash for Used Cars <em>Red Deer</em></h2>
             <p>One call gets you a firm offer. We collect the vehicle on your schedule and pay you on the spot.</p>
-            <div className="used-hero-actions"><a href="#quote" className="primary-button">Get a free valuation <ArrowRight aria-hidden="true" /></a><a href="tel:[PHONE]" className="text-link"><Phone aria-hidden="true" /> [PHONE]</a></div>
+            <div className="used-hero-actions"><a href="#quote" className="primary-button">Get a free valuation <ArrowRight aria-hidden="true" /></a><a href="tel:+15878213848" className="text-link"><Phone aria-hidden="true" /> (587) 821-3848</a></div>
             <div className="used-hero-proof"><span><Timer aria-hidden="true" /> Fast firm offers</span><span><Truck aria-hidden="true" /> Free pickup</span><span><Banknote aria-hidden="true" /> Same-day payment</span></div>
           </div>
           <QuoteForm />
@@ -211,18 +211,18 @@ export default function CashForUsedCarsPage() {
       </section>
 
       <section className="faq section-pad" id="faq">
-        <div className="page-shell faq-grid"><div className="faq-heading"><span className="eyebrow dark">Before you sell</span><h2>Cash for used cars FAQs</h2><p>Have a loan, warning light or unusual vehicle? Call [PHONE] and tell us about it.</p></div><FaqList items={usedCarFaqs} /></div>
+        <div className="page-shell faq-grid"><div className="faq-heading"><span className="eyebrow dark">Before you sell</span><h2>Cash for used cars FAQs</h2><p>Have a loan, warning light or unusual vehicle? Call (587) 821-3848 and tell us about it.</p></div><FaqList items={usedCarFaqs} /></div>
       </section>
 
       <section className="used-final-cta">
         <div className="used-final-photo" aria-hidden="true"><Image src="/assets/2016-ford-f160.jpeg" alt="" fill sizes="100vw" className="cover-image" /></div><div className="used-final-overlay" aria-hidden="true" />
-        <div className="page-shell used-final-content"><span className="eyebrow">No listing required</span><h2>Sell your used car for cash today.</h2><p>Skip the listings and lowball offers. Get a firm price for your used car and have the money in hand this week.</p><div><a href="#quote" className="primary-button">Request your free quote <ArrowRight aria-hidden="true" /></a><a href="tel:[PHONE]" className="text-link"><Phone aria-hidden="true" /> Call [PHONE]</a></div></div>
+        <div className="page-shell used-final-content"><span className="eyebrow">No listing required</span><h2>Sell your used car for cash today.</h2><p>Skip the listings and lowball offers. Get a firm price for your used car and have the money in hand this week.</p><div><a href="#quote" className="primary-button">Request your free quote <ArrowRight aria-hidden="true" /></a><a href="tel:+15878213848" className="text-link"><Phone aria-hidden="true" /> Call (587) 821-3848</a></div></div>
       </section>
 
       <footer className="site-footer">
         <div className="page-shell footer-grid">
           <div className="footer-brand"><Image src="/assets/carsfircashreddeer-logo.png" width={2172} height={724} alt="Cars for Cash Red Deer" /><p>Fast, firm offers for used vehicles across Red Deer and Central Alberta.</p></div>
-          <div><h2>Contact</h2><a href="tel:[PHONE]">[PHONE]</a><span>74C Clearview Dr, Red Deer, AB T4E 0A1</span><span>Open daily, 7:00 AM–11:00 PM</span></div>
+          <div><h2>Contact</h2><a href="tel:+15878213848">(587) 821-3848</a><span>74C Clearview Dr, Red Deer, AB T4E 0A1</span><span>Open daily, 7:00 AM–11:00 PM</span></div>
           <div><h2>Services</h2><Link href="/scrap-car-removal/">Scrap Car Removal</Link><Link href="/cash-for-used-cars/">Cash for Used Cars</Link><Link href="/cash-for-junk-cars/">Cash for Junk Cars</Link><Link href="/cash-for-scrap-cars/">Cash for Scrap Cars</Link><Link href="/cash-for-hail-damaged-cars/">Hail Damaged Cars</Link></div>
           <div><h2>Locations</h2><Link href="/cash-for-cars-calgary/">Calgary</Link><Link href="/cash-for-cars-airdrie/">Airdrie</Link><Link href="/cash-for-cars-lethbridge/">Lethbridge</Link></div>
         </div>

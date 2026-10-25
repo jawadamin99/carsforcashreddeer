@@ -131,7 +131,7 @@ export default function Home() {
             </p>
             <div className="hero-actions">
               <a href="#quote" className="primary-button">Get a free quote <ArrowRight aria-hidden="true" /></a>
-              <a href="tel:[PHONE]" className="text-link"><Phone size={19} aria-hidden="true" /> Call [PHONE]</a>
+              <a href="tel:+15878213848" className="text-link"><Phone size={19} aria-hidden="true" /> Call (587) 821-3848</a>
             </div>
             <div className="hero-proof" aria-label="Service highlights">
               <span><Truck aria-hidden="true" /> Free towing</span>
@@ -156,7 +156,7 @@ export default function Home() {
             <p className="lead">You have a car you no longer want, and every option so far has been a hassle.</p>
             <p>Private buyers book a viewing and never show up. The dealership offers a trade-in figure that barely covers a tank of gas. The scrapyard wants you to arrange your own tow. Meanwhile the vehicle sits in your driveway, still costing you insurance and taking up space.</p>
             <p>We make that problem go away in a single phone call. Cars for Cash Red Deer buys cars, trucks, SUVs and vans in any condition, pays you on the spot, and tows the vehicle away for free. Running, broken down, written off or rusted out, we give you a firm offer and pick it up, usually the same day or the next.</p>
-            <p><strong>Call [PHONE] or fill in the quote form for a no-obligation cash offer in minutes.</strong></p>
+            <p><strong>Call (587) 821-3848 or fill in the quote form for a no-obligation cash offer in minutes.</strong></p>
           </div>
         </div>
       </section>
@@ -212,7 +212,7 @@ export default function Home() {
             <p>The whole process usually takes less than a day from your first call to money in your hand.</p>
           </div>
           <div className="process-line">
-            <article><span>1</span><BadgeDollarSign aria-hidden="true" /><h3>Get your quote</h3><p>Call [PHONE] or use the online form. Tell us the year, make, model, approximate mileage and condition. Photos help but are not required. We give you a firm cash offer, usually within minutes.</p></article>
+            <article><span>1</span><BadgeDollarSign aria-hidden="true" /><h3>Get your quote</h3><p>Call (587) 821-3848 or use the online form. Tell us the year, make, model, approximate mileage and condition. Photos help but are not required. We give you a firm cash offer, usually within minutes.</p></article>
             <article><span>2</span><CalendarClock aria-hidden="true" /><h3>Book a pickup time</h3><p>Choose a time that suits you. Same-day pickup is often available in Red Deer, with evening and weekend slots available on request.</p></article>
             <article><span>3</span><Banknote aria-hidden="true" /><h3>Get paid on the spot</h3><p>Our driver confirms the vehicle, you sign the bill of sale, and you receive payment before we tow it away. You keep your licence plates.</p></article>
           </div>
@@ -302,7 +302,7 @@ export default function Home() {
           <div className="faq-heading">
             <span className="eyebrow dark">Straight answers</span>
             <h2>Frequently asked questions about cash for cars in Red Deer</h2>
-            <p>Still unsure about your vehicle? Call [PHONE] and tell us what is sitting in your driveway.</p>
+            <p>Still unsure about your vehicle? Call (587) 821-3848 and tell us what is sitting in your driveway.</p>
           </div>
           <FaqList items={faqs} />
         </div>
@@ -315,7 +315,7 @@ export default function Home() {
           <span className="eyebrow">Ready when you are</span>
           <h2>Get your cash offer today.</h2>
           <p>Every week a car sits unused, it loses value and keeps costing you insurance and space. Get a firm offer now and have it gone by tomorrow.</p>
-          <div><a href="#quote" className="primary-button">Request a free quote <ArrowRight aria-hidden="true" /></a><a href="tel:[PHONE]" className="text-link"><Phone aria-hidden="true" /> [PHONE]</a></div>
+          <div><a href="#quote" className="primary-button">Request a free quote <ArrowRight aria-hidden="true" /></a><a href="tel:+15878213848" className="text-link"><Phone aria-hidden="true" /> (587) 821-3848</a></div>
         </div>
       </section>
 
@@ -325,7 +325,7 @@ export default function Home() {
             <Image src="/assets/carsfircashreddeer-logo.png" width={2172} height={724} alt="Cars for Cash Red Deer" />
             <p>Fast, straightforward cash offers for vehicles across Red Deer and Central Alberta.</p>
           </div>
-          <div><h2>Contact</h2><a href="tel:[PHONE]">[PHONE]</a><span>74C Clearview Dr, Red Deer, AB T4E 0A1</span><span>Open daily, 7:00 AM–11:00 PM</span></div>
+          <div><h2>Contact</h2><a href="tel:+15878213848">(587) 821-3848</a><span>74C Clearview Dr, Red Deer, AB T4E 0A1</span><span>Open daily, 7:00 AM–11:00 PM</span></div>
           <div><h2>Services</h2>{services.map((service) => <Link href={service.href} key={service.href}>{service.title}</Link>)}</div>
           <div><h2>Locations</h2><Link href="/cash-for-cars-calgary/">Calgary</Link><Link href="/cash-for-cars-airdrie/">Airdrie</Link><Link href="/cash-for-cars-lethbridge/">Lethbridge</Link></div>
         </div>
