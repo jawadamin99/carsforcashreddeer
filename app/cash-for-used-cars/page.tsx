@@ -69,7 +69,7 @@ export default function CashForUsedCarsPage() {
     <main className="used-page">
 
       <section className="used-hero">
-        <div className="used-hero-photo" aria-hidden="true"><Image src="/assets/2017-lexus.jpeg" alt="" fill priority sizes="100vw" className="cover-image" /></div>
+        <div className="used-hero-photo" aria-hidden="true"><Image src="/assets/black-audi-a4-red-deer.jpeg" alt="" fill priority sizes="100vw" className="cover-image" /></div>
         <div className="used-hero-overlay" aria-hidden="true" />
         <div className="page-shell used-hero-layout">
           <SiteHeader />
@@ -113,10 +113,10 @@ export default function CashForUsedCarsPage() {
         <div className="page-shell">
           <div className="split-heading"><div><span className="eyebrow dark">Any year. Almost any mileage.</span><h2>Used vehicles we buy</h2></div><p>High mileage, cosmetic damage, worn tires or a check engine light are not deal-breakers. We price your vehicle as it is.</p></div>
           <div className="vehicle-showcase">
-            <article><div><Image src="/assets/2011-mitsubishi-lancer.jpeg" alt="Used sedan in Red Deer" fill sizes="(max-width: 800px) 100vw, 30vw" className="cover-image" /></div><h3>Sedans & hatchbacks</h3><p>Honda Civic, Toyota Corolla, Hyundai Elantra, Mazda3, Chevrolet Cruze and more.</p></article>
+            <article><div><Image src="/assets/silver-ford-focus-red-deer.jpeg" alt="Used sedan in Red Deer" fill sizes="(max-width: 800px) 100vw, 30vw" className="cover-image" /></div><h3>Sedans & hatchbacks</h3><p>Honda Civic, Toyota Corolla, Hyundai Elantra, Mazda3, Chevrolet Cruze and more.</p></article>
             <article><div><Image src="/assets/2016-ford-f160.jpeg" alt="Used Ford pickup truck" fill sizes="(max-width: 800px) 100vw, 30vw" className="cover-image" /></div><h3>Pickup trucks</h3><p>Ford F-150, Ram 1500, Chevrolet Silverado, GMC Sierra and Toyota Tacoma.</p></article>
             <article><div><Image src="/assets/hyundai-tuscon.jpeg" alt="Used SUV in Alberta" fill sizes="(max-width: 800px) 100vw, 30vw" className="cover-image" /></div><h3>SUVs & crossovers</h3><p>Ford Escape, Toyota RAV4, Honda CR-V, Jeep Grand Cherokee and Nissan Rogue.</p></article>
-            <article><div><Image src="/assets/toyota-sienna.jpeg" alt="Used Toyota minivan in Red Deer" fill sizes="(max-width: 800px) 100vw, 30vw" className="cover-image" /></div><h3>Minivans & family vehicles</h3><p>Dodge Grand Caravan, Honda Odyssey, Toyota Sienna and other family vehicles.</p></article>
+            <article><div><Image src="/assets/white-nissan-rogue-red-deer.jpeg" alt="Used family vehicle in Red Deer" fill sizes="(max-width: 800px) 100vw, 30vw" className="cover-image" /></div><h3>Minivans & family vehicles</h3><p>Dodge Grand Caravan, Honda Odyssey, Toyota Sienna and other family vehicles.</p></article>
           </div>
           <p className="commercial-note"><BriefcaseBusiness aria-hidden="true" /> We also buy work vans and light commercial vehicles.</p>
         </div>
@@ -222,7 +222,7 @@ export default function CashForUsedCarsPage() {
       <footer className="site-footer">
         <div className="page-shell footer-grid">
           <div className="footer-brand"><Image src="/assets/carsfircashreddeer-logo.png" width={2172} height={724} alt="Cars for Cash Red Deer" /><p>Fast, firm offers for used vehicles across Red Deer and Central Alberta.</p></div>
-          <div><h2>Contact</h2><a href="tel:+15878213848">(587) 821-3848</a><span>74C Clearview Dr, Red Deer, AB T4E 0A1</span><span>Open daily, 7:00 AM–11:00 PM</span></div>
+          <div><h2>Contact</h2><a href="tel:+15878213848">(587) 821-3848</a><span className="hidden-address" aria-hidden="true">74C Clearview Dr, Red Deer, AB T4E 0A1</span><span>Open daily, 7:00 AM–11:00 PM</span></div>
           <div><h2>Services</h2><Link href="/scrap-car-removal/">Scrap Car Removal</Link><Link href="/cash-for-used-cars/">Cash for Used Cars</Link><Link href="/cash-for-junk-cars/">Cash for Junk Cars</Link><Link href="/cash-for-scrap-cars/">Cash for Scrap Cars</Link><Link href="/cash-for-hail-damaged-cars/">Hail Damaged Cars</Link></div>
           <div><h2>Locations</h2><Link href="/cash-for-cars-calgary/">Calgary</Link><Link href="/cash-for-cars-airdrie/">Airdrie</Link><Link href="/cash-for-cars-lethbridge/">Lethbridge</Link></div>
         </div>

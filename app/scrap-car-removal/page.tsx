@@ -84,7 +84,7 @@ export default function ScrapCarRemovalPage() {
 
       <section className="scrap-hero">
         <div className="scrap-hero-photo" aria-hidden="true">
-          <Image src="/assets/2011-mitsubishi-lancer.jpeg" alt="" fill priority sizes="100vw" className="cover-image" />
+          <Image src="/assets/damaged-nissan-pathfinder-red-deer.jpeg" alt="" fill priority sizes="100vw" className="cover-image" />
         </div>
         <div className="scrap-hero-overlay" aria-hidden="true" />
         <div className="page-shell scrap-hero-layout">
@@ -269,7 +269,7 @@ export default function ScrapCarRemovalPage() {
       <footer className="site-footer">
         <div className="page-shell footer-grid">
           <div className="footer-brand"><Image src="/assets/carsfircashreddeer-logo.png" width={2172} height={724} alt="Cars for Cash Red Deer" /><p>Free scrap car pickup and straightforward cash offers across Red Deer and Central Alberta.</p></div>
-          <div><h2>Contact</h2><a href="tel:+15878213848">(587) 821-3848</a><span>74C Clearview Dr, Red Deer, AB T4E 0A1</span><span>Open daily, 7:00 AM–11:00 PM</span></div>
+          <div><h2>Contact</h2><a href="tel:+15878213848">(587) 821-3848</a><span className="hidden-address" aria-hidden="true">74C Clearview Dr, Red Deer, AB T4E 0A1</span><span>Open daily, 7:00 AM–11:00 PM</span></div>
           <div><h2>Services</h2><Link href="/scrap-car-removal/">Scrap Car Removal</Link><Link href="/cash-for-used-cars/">Cash for Used Cars</Link><Link href="/cash-for-junk-cars/">Cash for Junk Cars</Link><Link href="/cash-for-scrap-cars/">Cash for Scrap Cars</Link><Link href="/cash-for-hail-damaged-cars/">Hail Damaged Cars</Link></div>
           <div><h2>Locations</h2><Link href="/cash-for-cars-calgary/">Calgary</Link><Link href="/cash-for-cars-airdrie/">Airdrie</Link><Link href="/cash-for-cars-lethbridge/">Lethbridge</Link></div>
         </div>

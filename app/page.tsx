@@ -41,14 +41,14 @@ const services = [
   {
     title: "Cash for Used Cars",
     href: "/cash-for-used-cars/",
-    image: "/assets/2017-lexus.jpeg",
+    image: "/assets/black-audi-a4-red-deer.jpeg",
     alt: "Used Lexus SUV available for a cash offer",
     copy: "Still running but you want a fast, simple sale? We offer cash for used cars of any age and mileage, including vehicles with mechanical issues, lingering loan balances or cosmetic wear that puts private buyers off.",
   },
   {
     title: "Cash for Junk Cars",
     href: "/cash-for-junk-cars/",
-    image: "/assets/2011-mitsubishi-lancer.jpeg",
+    image: "/assets/damaged-nissan-pathfinder-red-deer.jpeg",
     alt: "Non-running Mitsubishi being collected by a tow truck",
     copy: "Cars that will not start, failed an inspection, or are missing parts still have value. Our cash for junk cars service pays you for vehicles other buyers will not touch, running or not.",
   },
@@ -285,7 +285,7 @@ export default function Home() {
 
       <section className="recycling section-pad">
         <div className="page-shell recycling-grid">
-          <div className="recycling-image"><Image src="/assets/toyota-sienna.jpeg" alt="Toyota minivan ready for pickup in Red Deer" fill sizes="(max-width: 800px) 100vw, 50vw" className="cover-image" /></div>
+          <div className="recycling-image"><Image src="/assets/white-nissan-rogue-red-deer.jpeg" alt="Nissan family vehicle ready for pickup in Red Deer" fill sizes="(max-width: 800px) 100vw, 50vw" className="cover-image" /></div>
           <div className="recycling-copy">
             <Leaf aria-hidden="true" />
             <span className="eyebrow">A cleaner end of the road</span>
@@ -325,7 +325,7 @@ export default function Home() {
             <Image src="/assets/carsfircashreddeer-logo.png" width={2172} height={724} alt="Cars for Cash Red Deer" />
             <p>Fast, straightforward cash offers for vehicles across Red Deer and Central Alberta.</p>
           </div>
-          <div><h2>Contact</h2><a href="tel:+15878213848">(587) 821-3848</a><span>74C Clearview Dr, Red Deer, AB T4E 0A1</span><span>Open daily, 7:00 AM–11:00 PM</span></div>
+          <div><h2>Contact</h2><a href="tel:+15878213848">(587) 821-3848</a><span className="hidden-address" aria-hidden="true">74C Clearview Dr, Red Deer, AB T4E 0A1</span><span>Open daily, 7:00 AM–11:00 PM</span></div>
           <div><h2>Services</h2>{services.map((service) => <Link href={service.href} key={service.href}>{service.title}</Link>)}</div>
           <div><h2>Locations</h2><Link href="/cash-for-cars-calgary/">Calgary</Link><Link href="/cash-for-cars-airdrie/">Airdrie</Link><Link href="/cash-for-cars-lethbridge/">Lethbridge</Link></div>
         </div>
