@@ -48,7 +48,7 @@ export const metadata: Metadata = {
       "Any make, any condition. Get a fast cash offer with free towing in Red Deer.",
     images: ["/social-share.png"],
   },
-  robots: { index: true, follow: true },
+  robots: { index: false, follow: true },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
