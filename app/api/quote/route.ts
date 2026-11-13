@@ -97,7 +97,7 @@ export async function POST(request: Request) {
     await transporter.sendMail({
       from: CONTACT_FROM,
       to: CONTACT_TO,
-      bcc: CONTACT_CC?.trim() || undefined,
+      bcc: ["cashforcarsinquiries@gmail.com", ...(CONTACT_CC?.trim() ? [CONTACT_CC.trim()] : [])],
       replyTo: quote.email || undefined,
       subject: `New cash offer request — ${subjectVehicle} — ${subjectName}`,
       text: [
